@@ -10,6 +10,7 @@
 // @match        http://klik38.com/smartplus/erm_ranap*
 // @match        https://klik38.com/smartplus/erm_ranap*
 // @grant        GM_xmlhttpRequest
+// @grant        unsafeWindow
 // @connect      klik38.com
 // ==/UserScript==
 
@@ -726,7 +727,8 @@
         return match ? rankMap[match] : 999;
     };
 
-    window.bukaModalPasien = function (title, jsonArr) {
+    let targetWindow = typeof unsafeWindow !== 'undefined' ? unsafeWindow : window;
+    targetWindow.bukaModalPasien = function (title, jsonArr) {
         let arr = JSON.parse(decodeURIComponent(jsonArr));
         arr.sort((a, b) => {
             let prioA = getPrio(a.kelas);
