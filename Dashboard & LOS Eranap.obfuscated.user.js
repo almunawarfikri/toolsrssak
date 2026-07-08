@@ -1,9 +1,11 @@
-﻿// ==UserScript==
+// ==UserScript==
 // @name         Dashboard & LOS Eranap (Combined) RS SA Karawaci
 // @namespace    http://tampermonkey.net/
 // @version      3.0
 // @description  Dashboard TKMKB + LOS RS + LOS BPJS + Auto 200 + CPPT Diagnosa Viewer
 // @author       Fikri
+// @updateURL    https://raw.githubusercontent.com/almunawarfikri/toolsrssak/main/Dashboard%20&%20LOS%20Eranap.obfuscated.user.js
+// @downloadURL  https://raw.githubusercontent.com/almunawarfikri/toolsrssak/main/Dashboard%20&%20LOS%20Eranap.obfuscated.user.js
 // @match        http://192.168.10.6/smartplus/erm_ranap*
 // @match        http://klik38.com/smartplus/erm_ranap*
 // @match        https://klik38.com/smartplus/erm_ranap*
